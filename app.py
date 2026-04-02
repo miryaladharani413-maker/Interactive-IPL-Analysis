@@ -26,7 +26,6 @@ y = df["Hire"]
 
 # -------- MODEL --------
 
-score_value = model.score(X, y)
 
 # -------- HOME --------
 if option == "🏠 Home":
