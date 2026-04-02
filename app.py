@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
 
 # -------- PAGE CONFIG --------
 st.set_page_config(page_title="IPL Dashboard", layout="wide")
@@ -26,8 +25,6 @@ X = df[["Experience","TestScore","Communication"]]
 y = df["Hire"]
 
 # -------- MODEL --------
-model = RandomForestClassifier()
-model.fit(X, y)
 
 score_value = model.score(X, y)
 
