@@ -78,6 +78,6 @@ elif option == "📊 Analysis":
 
 # -------- PERFORMANCE --------
 elif option == "📈 Performance":
-    st.subheader("Model Performance")
+    
 
-    st.metric("Model Accuracy", round(score_value, 2))
+    
