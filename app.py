@@ -74,7 +74,6 @@ df=pd.DataFrame(data)
 X=df[["Experience","TestScore","Communication"]]
 y=df["Hire"]
 
-model.fit(X,y)
 
 # -------- HOME --------
 if option=="🏠 Home":
