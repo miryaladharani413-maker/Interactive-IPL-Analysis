@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn.metrics import r2_score
 
 # -------- PAGE CONFIG --------
 st.set_page_config(page_title="IPL Dashboard", layout="wide")
