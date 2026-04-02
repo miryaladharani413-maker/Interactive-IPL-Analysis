@@ -123,8 +123,6 @@ elif option=="📊 Analysis":
 
     st.subheader("Feature Importance")
 
-    importance=model.feature_importances_
-
     imp_df=pd.DataFrame({
         "Feature":X.columns,
         "Importance":importance
@@ -134,7 +132,6 @@ elif option=="📊 Analysis":
 
 # -------- PERFORMANCE --------
 elif option=="📈 Performance":
-    y_pred=model.predict(X)
     score_value=r2_score(y,y_pred)
 
     st.metric("Model Score", round(score_value,2))
