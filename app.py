@@ -125,13 +125,12 @@ elif option=="📊 Analysis":
 
     imp_df=pd.DataFrame({
         "Feature":X.columns,
-        "Importance":importance
     })
 
     st.bar_chart(imp_df.set_index("Feature"))
 
 # -------- PERFORMANCE --------
 elif option=="📈 Performance":
-    score_value=r2_score(y,y_pred)
+   
 
     st.metric("Model Score", round(score_value,2))
