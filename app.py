@@ -74,7 +74,6 @@ df=pd.DataFrame(data)
 X=df[["Experience","TestScore","Communication"]]
 y=df["Hire"]
 
-model=RandomForestClassifier()
 model.fit(X,y)
 
 # -------- HOME --------
